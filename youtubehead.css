@@ -1,0 +1,254 @@
+.header {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 0.5px solid rgba(235, 230, 230, 0.849);
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 100;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.hamb-menu {
+  height: 20px;
+  width: 20px;
+  margin-left: 25px;
+  vertical-align: top;
+}
+.yt-icon {
+  height: 100px;
+  width: 100px;
+  vertical-align: top;
+  margin-left: 20px;
+}
+
+.middle {
+  flex: 1;
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.searchbar {
+  /* transform: translate(-50%, -50%); */
+  background: transparent;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.search {
+  font-family: Roboto;
+  height: 40px;
+  flex: 1;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 0;
+  padding-left: 20px;
+  padding-right: 5px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  vertical-align: middle;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-delay: 0ms;
+  transition-timing-function: ease-in-out;
+  border: 0.04px solid rgba(169, 167, 167, 0.925);
+  background: none;
+  font-size: 16px;
+  line-height: 40px;
+  box-shadow: inset 1px 2px 3px rgba(8, 8, 8, 0.055);
+  outline-style: none;
+}
+
+.search::placeholder {
+  padding-left: 5px;
+}
+
+.search:hover {
+  background-color: rgba(241, 237, 237, 0.551);
+}
+
+.search:focus {
+  width: 550px;
+  background-color: rgba(241, 237, 237, 0.551);
+}
+
+.search-button {
+  height: 40px;
+  width: 70px;
+  background-color: rgba(208, 205, 205, 0.846);
+  vertical-align: middle;
+  border: 0.04px rgba(169, 167, 167, 0.979) solid;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  /* margin-left: -4px; */
+  margin-right: none;
+  position: relative;
+}
+
+.search-button .tooltip {
+  position: absolute;
+  background-color: rgba(128, 128, 128, 0.815);
+  color: white;
+  padding: 5px;
+  font-family: roboto;
+  border-radius: 4px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+  pointer-events: none;
+}
+
+.search-button:hover .tooltip {
+  opacity: 1;
+}
+
+.search-icon {
+  height: 20px;
+}
+
+.search-button:hover {
+  background-color: rgba(157, 155, 155, 0.832);
+}
+
+.mic-button {
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+  background-color: rgba(208, 205, 205, 0.818);
+  border: transparent;
+  border-radius: 25px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.mic-icon {
+  height: 20px;
+}
+
+.mic-button:hover {
+  background-color: rgba(157, 155, 155, 0.832);
+}
+
+.mic-button .tooltip {
+  position: absolute;
+  background-color: rgba(128, 128, 128, 0.815);
+  color: white;
+  padding: 5px;
+  font-family: roboto;
+  border-radius: 4px;
+  font-size: 12px;
+  bottom: -30px;
+  left: -2px;
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+  pointer-events: none;
+  width: 100px;
+}
+
+.mic-button:hover .tooltip {
+  opacity: 1;
+}
+
+.right {
+  background-color: white;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 24px;
+  flex-shrink: 0;
+}
+
+.video-icon {
+  height: 20px;
+}
+
+.apps-icon {
+  height: 20px;
+}
+
+.bell-icon {
+  height: 20px;
+}
+
+.bell-icon-area {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.bell-icon-area .tooltip {
+  position: absolute;
+  background-color: rgba(128, 128, 128, 0.815);
+  color: white;
+  padding: 5px;
+  font-family: roboto;
+  border-radius: 4px;
+  font-size: 12px;
+  bottom: -30px;
+  left: -2px;
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.bell-icon-area:hover .tooltip {
+  opacity: 1;
+}
+
+.bell-icon-area:hover {
+  border-radius: 25px;
+  background-color: rgba(197, 191, 191, 0.747);
+}
+
+.notif-count {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  background-color: #e60303;
+  color: white;
+  font-family: Roboto;
+  font-size: 9px;
+  font-weight: 500;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.profile-icon {
+  height: 35px;
+  width: 35px;
+  border-radius: 17.6px;
+}
+
+.profile-icon-area:hover {
+  border-radius: 100px;
+  background-color: gray;
+}
