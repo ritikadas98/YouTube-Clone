@@ -63,6 +63,10 @@ body {
   border-radius: 10px;
 }
 
+.video-preview:hover {
+  cursor: pointer;
+}
+
 .video-info-grid {
   margin-top: 10px;
   display: grid;
@@ -84,12 +88,13 @@ body {
 .video-info-text {
   height: 90px;
   vertical-align: top;
+  position: relative;
 }
 .video-title {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 }
 
 .video-channel {
@@ -102,13 +107,6 @@ body {
   font-size: 14px;
   color: #606060;
 }
-
-/* .video-preview:hover .vid-thumbnail {
-  width: 400px;
-  height: 225px;
-  transition: all 0.2s ease;
-  transition: linear; 
-} */
 
 .video-preview .vid-thumbnail {
   transition: all 0.2s ease-in-out;
@@ -135,4 +133,42 @@ body {
   align-items: center;
   border-radius: 7.5px;
   margin-left: 2px;
+}
+
+.video-info-text .tooltip {
+  position: absolute;
+  background-color: rgb(57, 54, 54);
+  color: white;
+  padding: 5px;
+  font-family: roboto;
+  border-radius: 4px;
+  border: 0.5px solid rgb(103, 102, 102);
+  font-size: 12px;
+  top: 16px;
+  left: 75px;
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.video-info-text:hover .tooltip {
+  opacity: 3;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+p:link {
+  color: inherit;
+}
+
+p:visited {
+  text-decoration: none;
+  color: inherit;
 }

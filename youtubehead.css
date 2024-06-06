@@ -82,6 +82,7 @@
 
 .search:hover {
   background-color: rgba(241, 237, 237, 0.551);
+  cursor: text;
 }
 
 .search:focus {
