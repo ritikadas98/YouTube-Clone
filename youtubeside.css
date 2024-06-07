@@ -4,14 +4,14 @@
   bottom: 0;
   top: 70px;
   background-color: white;
-  width: 90px;
+  width: 87px;
   z-index: 200;
 }
 
 .sidebar-icon {
   background-color: white;
   height: 90px;
-  width: 90px;
+  width: 87px;
   display: flex;
   align-items: center;
   justify-content: center;
